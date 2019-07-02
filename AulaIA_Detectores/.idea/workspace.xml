@@ -11,15 +11,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DetectaVJenimagenysalva.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DetectaVJenimagen.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -38,10 +29,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DetectaFacemarks.py">
+        <entry file="file://$PROJECT_DIR$/DetectaDlibcaras.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
+            <state relative-caret-position="278">
+              <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +112,8 @@
         <option value="$PROJECT_DIR$/DetectaVJedadysexo.py" />
         <option value="$PROJECT_DIR$/DibujaLluvia.py" />
         <option value="$PROJECT_DIR$/DetectaFacemarks.py" />
+        <option value="$PROJECT_DIR$/DetectaDlibFacemarks.py" />
+        <option value="$PROJECT_DIR$/DetectaDlibcaras.py" />
       </list>
     </option>
   </component>
@@ -159,8 +155,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DetectaFacemarks">
-    <configuration name="DetectaDNNcaras" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.DetectaDlibcaras">
+    <configuration name="DetectaDlibFacemarks" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Aula_Dectectores" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,7 +168,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DetectaDNNcaras.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DetectaDlibFacemarks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -181,7 +177,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DetectaDNNedadysexo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DetectaDlibcaras" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Aula_Dectectores" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -193,7 +189,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DetectaDNNedadysexo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DetectaDlibcaras.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -267,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DetectaDlibcaras" />
+        <item itemvalue="Python.DetectaDlibFacemarks" />
         <item itemvalue="Python.DetectaFacemarks" />
         <item itemvalue="Python.DibujaLluvia" />
         <item itemvalue="Python.DetectaVJedadysexo" />
-        <item itemvalue="Python.DetectaDNNedadysexo" />
-        <item itemvalue="Python.DetectaDNNcaras" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +293,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44503546" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2677305" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,6 +363,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DetectaFacemarks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DetectaVJencam.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -374,10 +377,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DetectaFacemarks.py">
+    <entry file="file://$PROJECT_DIR$/DetectaDlibFacemarks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
+        <state relative-caret-position="212">
+          <caret line="35" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DetectaDlibcaras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
