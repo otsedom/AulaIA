@@ -41,12 +41,12 @@ while (True):
     # Para cada cara detectada
     for (x, y, w, h) in faces:
         # Dibuja contenedor
-        container = cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
     # Para cada cara detectada
     for (x, y, w, h) in faces:
         # Dibuja contenedor
-        container = cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
 
     # Procesamiento edad y sexo
     for (x, y, w, h) in faces:

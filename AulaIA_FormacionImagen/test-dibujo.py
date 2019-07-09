@@ -56,8 +56,20 @@ esquinaInfDcha = (890, 300) # (radio X, radio Y)
 color = (0, 0, 255)
 cv2.rectangle(imagenRectangulo, esquinaSupIzda, esquinaInfDcha, color, ancho)
 
-# muestra imagen con elipse
-cv2.imshow('Elipse', imagenRectangulo)
+# muestra imagen con rectángulo
+cv2.imshow('Reactángulo', imagenRectangulo)
+cv2.waitKey(1)
+
+# dibuja triángulo relleno
+imagentriangulo = np.copy(imagen)
+pt1 = (10, 10)
+pt2 = (200, 100)
+pt3 = (120, 400)
+triangle_cnt = np.array([pt1, pt2, pt3])
+cv2.drawContours(imagentriangulo, [triangle_cnt], 0, (0, 255, 0), -1)
+
+# muestra imagen con triángulo
+cv2.imshow('Rectángulo', imagentriangulo)
 cv2.waitKey(1)
 
 # espera pulsar tecla para terminar programa

@@ -7,7 +7,6 @@ def raton_clic(evento, x, y, flags, params):
     global npuntos, px, py
     if evento == cv2.EVENT_LBUTTONDOWN:
         cv2.circle(imagen, (x, y), 5, (255,255,255), cv2.FILLED)
-
         npuntos = npuntos + 1
         if npuntos == 2:
             cv2.rectangle(imagen, (px, py), (x, y), (255, 255, 255), 3)
