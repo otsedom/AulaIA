@@ -26,6 +26,8 @@ while(True):
     # Captura fotograma
     ret, img = cap.read()
 
+    imghsv=
+
     # Pinta si el ratón está pulsado
     if pulsado == True:
         cv2.rectangle(img, (cx - 10, cy - 10), (cx + 10, cy + 10), (128, 128, 128), cv2.FILLED)

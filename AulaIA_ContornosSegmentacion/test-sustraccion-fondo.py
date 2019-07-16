@@ -9,7 +9,10 @@ if not camara.isOpened():
     exit(0)
 
 # Toma primer fotograma como fondo
-res, fondo = camara.read()
+for i in range(0,25):
+    res, fondo = camara.read()
+    cv2.waitKey(20)
+
 fondoGris = cv2.cvtColor(fondo, cv2.COLOR_BGR2GRAY)
 
 # Elimina detalle con filtro gausiano

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # nombre de la imagen a mostrar
-nombre_imagen = 'indurain.jpg'
+nombre_imagen = '../AulaIA_imagenes/Lenna.jpg'
 
 # lectura de la imagen desde disco
 imagen = cv2.imread(nombre_imagen)
