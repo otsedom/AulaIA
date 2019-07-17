@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 
 # nombre de la imagen a mostrar
 nombre_imagen = '../AulaIA_imagenes/Cicer2.jpg'
@@ -19,7 +20,7 @@ print('Número componentes: {}'.format(componentes))
 
 for x in range(0, ancho):
     for y in range(0, (int)(alto / 2)):
-        # Cancelamos uan componente
+        # Cancelamos una componente
         imagen[y,x,1] = 0
 
 cv2.imshow("Imagen", imagen)

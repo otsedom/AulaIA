@@ -17,11 +17,11 @@ imagenLinea = np.copy(imagen)
 ptoInicial = (500, 10)  # (x,y)
 ptoFinal = (500, 565)
 color = (255, 0, 255)  # (B,G,R)
-ancho = 2
-cv2.line(imagenLinea, ptoInicial, ptoFinal, color, ancho)
+grosor = 2
+cv2.line(imagenLinea, ptoInicial, ptoFinal, color, grosor)
 
 # muestra imagen con línea
-cv2.imshow('Línea', imagenLinea)
+cv2.imshow('Recta', imagenLinea)
 cv2.waitKey(1)
 
 # dibuja círculo
@@ -29,10 +29,10 @@ imagenCirculo = np.copy(imagen)
 centro = (875, 72)
 radio = 20
 color = (0, 255, 0)  # (B,G,R)
-cv2.circle(imagenCirculo, centro, radio, color, ancho)
+cv2.circle(imagenCirculo, centro, radio, color, grosor)
 
 # muestra imagen con círculo
-cv2.imshow('Círculo', imagenCirculo)
+cv2.imshow('Circunferencia', imagenCirculo)
 cv2.waitKey(1)
 
 # dibuja elipse
@@ -43,7 +43,7 @@ color = (255,255,0)
 anguloRotacion = 0
 anguloInicial = 0
 anguloFinal = 360
-cv2.ellipse(imagenElipse, centro, radios, anguloRotacion, anguloInicial, anguloFinal, color, ancho)
+cv2.ellipse(imagenElipse, centro, radios, anguloRotacion, anguloInicial, anguloFinal, color, grosor)
 
 # muestra imagen con elipse
 cv2.imshow('Elipse', imagenElipse)
@@ -54,10 +54,10 @@ imagenRectangulo = np.copy(imagen)
 esquinaSupIzda = (500, 60)
 esquinaInfDcha = (890, 300) # (radio X, radio Y)
 color = (0, 0, 255)
-cv2.rectangle(imagenRectangulo, esquinaSupIzda, esquinaInfDcha, color, ancho)
+cv2.rectangle(imagenRectangulo, esquinaSupIzda, esquinaInfDcha, color, grosor)
 
 # muestra imagen con rectángulo
-cv2.imshow('Reactángulo', imagenRectangulo)
+cv2.imshow('Recuadro', imagenRectangulo)
 cv2.waitKey(1)
 
 # dibuja triángulo relleno
@@ -69,7 +69,7 @@ triangle_cnt = np.array([pt1, pt2, pt3])
 cv2.drawContours(imagentriangulo, [triangle_cnt], 0, (0, 255, 0), -1)
 
 # muestra imagen con triángulo
-cv2.imshow('Rectángulo', imagentriangulo)
+cv2.imshow('Arbitrario', imagentriangulo)
 cv2.waitKey(1)
 
 # espera pulsar tecla para terminar programa

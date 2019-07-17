@@ -13,7 +13,7 @@ while (True):
     # Captura fotograma
     res, fotograma = camara.read()
 
-    # Muestra imagen en grises
+    # Muestra imagen
     cv2.imshow('Fotograma', fotograma)
 
     # Finaliza pulsando q

@@ -18,7 +18,7 @@ print('Ancho de la imagen: {}'.format(ancho))
 print('Número componentes: {}'.format(componentes))
 
 # mostrar la imagen en pantalla
-cv2.imshow('imagen orginal', imagen)
+cv2.imshow('imagen original', imagen)
 
 # convertir la imagen de BGR a RGB
 imagen_rgb = cv2.cvtColor(imagen, cv2.COLOR_BGR2RGB)
